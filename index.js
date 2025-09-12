@@ -9,7 +9,7 @@ const PORT = 5000;
 app.use(cookieParser());
 
 const customProxy = createProxyMiddleware({
-  target: "https://math-lessons.space/",
+  target: "https://www.mathify.lol/",
   changeOrigin: true,
   onProxyReq: (proxyReq) => {
     storedCookies.forEach((cookie) => {
